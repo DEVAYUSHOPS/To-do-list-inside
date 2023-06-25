@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>To-do list</title>
+</head>
+<body>
+    <div class="newTask">
+        <h2 class="heading">New Task...</h2>
+
+
+        <!-- Modal for input  -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">New Task</button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New Task</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                <div class="mb-3">
+                    <label for="events" class="col-form-label">Event</label>
+                    <input type="text" class="form-control" id="events">
+                </div>
+                <div class="mb-3">
+                    <label for="venue" class="col-form-label">Venue</label>
+                    <input type="text" class="form-control" id="venue">
+                </div>
+                <div class="mb-3">
+                    <label for="time" class="col-form-label">Time</label>
+                    <input type="text" class="form-control" id="time">
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="ok">OK</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="items">
+            <ol class="list-group list-group-numbered">
+                <!-- <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold eventVal"></div>
+                    <p class="venueVal"></p>
+                    <p class="timeVal"></p>
+                  </div>
+                  <span class="badge bg-dark close"><i class="fa fa-trash fa-3x" aria-hidden="true"></i></span>
+                </li> -->
+            </ol>
+        </div>
+
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
